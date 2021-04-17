@@ -1,0 +1,23 @@
+{
+  "name": "tea_cozy",
+  "version": "1.0.0",
+  "description": "Codecademy intermediate CSS project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DakotahGodfrey/codecademy_tea_cozy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DakotahGodfrey/codecademy_tea_cozy/issues"
+  },
+  "homepage": "https://github.com/DakotahGodfrey/codecademy_tea_cozy#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
