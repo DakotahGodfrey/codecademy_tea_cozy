@@ -1,2 +1,174 @@
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin: 20px; }
+
 body {
-  color: #333; }
+  color: #333;
+  background-color: #222; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  color: #fff8f2;
+  text-decoration: none;
+  font-size: 2.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent; }
+  a.current, a:hover {
+    border-color: #fff8f2; }
+
+nav {
+  display: flex;
+  background-color: #222;
+  align-items: center;
+  height: 69px;
+  justify-content: space-between;
+  opacity: 0.9;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px solid #fff8f2; }
+  nav img {
+    height: 50px;
+    margin-left: 10px; }
+  nav ul {
+    display: flex; }
+    nav ul li {
+      margin-right: 2rem; }
+
+header {
+  height: 700px;
+  max-height: 700px;
+  background: url("../assets/images/img-mission-background.jpg") fixed center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  header div {
+    text-align: center;
+    background-color: rgba(34, 34, 34, 0.6);
+    color: #fff8f2;
+    width: 100%;
+    padding: 2rem 1rem;
+    line-height: 1.4; }
+    header div h1 {
+      font-size: 3rem; }
+    header div span {
+      font-size: 2.2rem; }
+
+.tea-catalog .section-header {
+  background-color: #222;
+  color: #fff8f2;
+  text-align: center; }
+  .tea-catalog .section-header h2 {
+    font-size: 2.5rem;
+    padding: 2rem 0; }
+  .tea-catalog .section-header span {
+    font-size: 2rem; }
+
+.tea-catalog .img-container {
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  margin: 2rem auto 9.5rem auto; }
+  .tea-catalog .img-container .card {
+    width: 300px;
+    min-height: 200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; }
+    .tea-catalog .img-container .card img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      margin: 0 0 1rem 0;
+      border-radius: 50px;
+      box-shadow: 0 4px 3px rgba(255, 248, 242, 0.4);
+      transition: box-shadow 0.4s ease-out, opacity 0.4s ease-out; }
+      .tea-catalog .img-container .card img:hover {
+        box-shadow: none;
+        opacity: 0.5; }
+    .tea-catalog .img-container .card .caption {
+      color: #fff8f2;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600; }
+
+.locations {
+  min-height: 500px;
+  background: url("../assets/images/img-locations-background.jpg") fixed no-repeat center center/cover;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 1200px; }
+  .locations .locations-header {
+    width: 100%; }
+    .locations .locations-header h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      color: #fff8f2;
+      padding: 2rem;
+      padding-bottom: 0; }
+  .locations .location-cards {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    flex-wrap: wrap; }
+    .locations .location-cards .location-card {
+      width: 300px;
+      text-align: center;
+      background-color: rgba(34, 34, 34, 0.6);
+      color: #fff8f2;
+      padding: 2rem 1rem;
+      margin: 2rem;
+      border-radius: 50px;
+      box-shadow: 0 4px 6px inset rgba(255, 248, 242, 0.4), 0 4px 6px rgba(34, 34, 34, 0.8); }
+      .locations .location-cards .location-card h3 {
+        font-size: 2.2rem; }
+      .locations .location-cards .location-card p {
+        font-size: 2.2rem;
+        margin: 1.3rem;
+        padding: 2rem 0; }
+
+footer {
+  padding-top: 4rem; }
+  footer .contact {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    footer .contact a {
+      display: block;
+      border: 2px solid transparent;
+      padding: 1rem;
+      border-radius: 50px; }
+      footer .contact a:hover {
+        opacity: 0.7; }
+    footer .contact h2 {
+      font-size: 2.5rem;
+      color: #fff8f2; }
+  footer small {
+    font-size: 1.2rem;
+    color: #fff8f2;
+    padding: 0 0 2rem 2rem;
+    opacity: 0.4; }
+    footer small a {
+      font-size: 1.2rem; }
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none; } }

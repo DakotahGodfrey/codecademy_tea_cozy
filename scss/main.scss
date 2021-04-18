@@ -1,4 +1,212 @@
 @import "config";
-body{
-    color: $text-dark;
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin: 20px;
+
+}
+
+body {
+  color: $text-dark;
+  background-color: $bg-dark;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: $text-light;
+  text-decoration: none;
+  font-size: 2.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
+  &.current,
+  &:hover {
+    border-color: $text-light;
+  }
+}
+nav {
+  display: flex;
+  background-color: $bg-dark;
+  align-items: center;
+  height: 69px;
+  justify-content: space-between;
+  opacity: 0.9;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px solid $text-light;
+  img {
+    height: 50px;
+    margin-left: 10px;
+  }
+  ul {
+    display: flex;
+    li {
+      margin-right: 2rem;
+    }
+  }
+}
+header {
+  height: 700px;
+  max-height: 700px;
+  background: url("../assets/images/img-mission-background.jpg") fixed center
+    center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    text-align: center;
+    background-color: $bg-dark-transparent;
+    color: $text-light;
+    width: 100%;
+    padding: 2rem 1rem;
+    line-height: 1.4;
+    h1 {
+      font-size: 3rem;
+    }
+    span {
+      font-size: 2.2rem;
+    }
+  }
+}
+.tea-catalog {
+  .section-header {
+    background-color: $bg-dark;
+    color: $text-light;
+    text-align: center;
+    h2 {
+      font-size: 2.5rem;
+      padding: 2rem 0;
+    }
+    span {
+      font-size: 2rem;
+    }
+  }
+  .img-container {
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    margin: 2rem auto 9.5rem auto;
+    .card {
+      width: 300px;
+      min-height: 200px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        margin: 0 0 1rem 0;
+        border-radius: 50px;
+        box-shadow: 0 4px 3px rgba($color: $text-light, $alpha: 0.4);
+        transition: box-shadow 0.4s ease-out, opacity 0.4s ease-out;
+        &:hover {
+          box-shadow: none;
+          opacity: 0.5;
+        }
+      }
+      .caption {
+        color: $text-light;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.locations{
+    min-height: 500px;
+    background: url('../assets/images/img-locations-background.jpg') fixed no-repeat center center/cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    overflow-x: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
+    .locations-header{
+        width: 100%;
+        h2{
+            font-size: 2.5rem;
+            text-align: center;
+            color: $text-light;
+            padding: 2rem;
+            padding-bottom: 0;
+        }
+    }
+    .location-cards{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        flex-wrap: wrap;
+        .location-card{
+        width: 300px;
+        text-align: center;
+        background-color: $bg-dark-transparent;
+        color: $text-light;
+        padding: 2rem 1rem;
+        margin: 2rem;
+        border-radius: 50px;
+        box-shadow:0 4px 6px inset rgba($color: $text-light, $alpha: 0.4), 0 4px 6px rgba($color: $bg-dark, $alpha: 0.8);
+        h3{
+            font-size: 2.2rem;
+        }
+        p{
+            font-size: 2.2rem;
+            margin: 1.3rem;
+            padding: 2rem 0;
+        }
+    }
+    }
+}
+footer{
+    padding-top: 4rem;
+    .contact{
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        a{
+            display: block;
+            border: 2px solid transparent;
+            padding: 1rem;
+            border-radius: 50px;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        h2{
+            font-size:2.5rem;
+            color: $text-light;
+        }
+  
+    }
+    small{
+        font-size: 1.2rem;
+        color: $text-light;
+        padding: 0 0 2rem 2rem;
+        opacity: 0.4;
+        a{
+            font-size: 1.2rem;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+   nav{
+       ul{
+           display: none;
+       }
+   }
 }
